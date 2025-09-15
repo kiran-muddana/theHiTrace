@@ -1,0 +1,235 @@
+<section class="services-hero-section">
+  <div class="hero-content">
+    <h1 class="services-title">Consulting Services</h1>
+    <p class="services-tagline">We help small and medium businesses adopt the right technologies to improve efficiency and scale sustainably.</p>
+  </div>
+</section>
+
+<!-- <section class="services-focus-section">
+  <div class="container">
+    <h2 class="section-heading">Our Consulting Focus Areas</h2>
+    <div class="focus-areas-grid">
+      <div class="focus-card">
+        <i class="material-icons focus-icon">sync_alt</i>
+        <h3>Business Process Automation</h3>
+        <p>Automate repetitive tasks to improve efficiency.</p>
+      </div>
+      <div class="focus-card">
+        <i class="material-icons focus-icon">dns</i>
+        <h3>ERP & CRM Strategy</h3>
+        <p>Select, implement, and customize systems to align with goals.</p>
+      </div>
+      <div class="focus-card">
+        <i class="material-icons focus-icon">cloud_queue</i>
+        <h3>Cloud Migration & SaaS Adoption</h3>
+        <p>Transition to cloud-based platforms seamlessly.</p>
+      </div>
+      <div class="focus-card">
+        <i class="material-icons focus-icon">security</i>
+        <h3>Compliance & Data Security</h3>
+        <p>Meet regulatory requirements and protect sensitive data.</p>
+      </div>
+      <div class="focus-card">
+        <i class="material-icons focus-icon">linear_scale</i>
+        <h3>Custom Workflow Design</h3>
+        <p>Design tailored workflows to improve efficiency.</p>
+      </div>
+      <div class="focus-card">
+        <i class="material-icons focus-icon">sensors</i>
+        <h3>IoT Deployment Planning</h3>
+        <p>Leverage IoT technologies to gain real-time insights.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="services-details-section">
+  <div class="container">
+    <h2 class="section-heading">Our Consulting Focus Areas</h2>
+
+    <div class="service-accordion" [class.expanded]="expandedService === 'bpa'">
+      <div class="accordion-header" (click)="toggleService('bpa')">
+        <h3 class="accordion-title">Business Process Automation</h3>
+        <i class="material-icons accordion-icon">{{ expandedService === 'bpa' ? 'remove' : 'add' }}</i>
+      </div>
+      <div class="accordion-content">
+        <div class="service-overview">
+          <h4>Overview</h4>
+          <p>We analyze your current workflows and identify opportunities to automate repetitive, manual tasks using software tools and custom integrations.</p>
+        </div>
+        <div class="service-details">
+          <h4>Key Services</h4>
+          <ul>
+            <li>Workflow mapping and optimization</li>
+            <li>Automation of HR, finance, inventory, and customer service processes</li>
+            <li>Integration of third-party tools (e.g., CRM, ERP, accounting software)</li>
+            <li>Custom automation scripts and dashboards</li>
+          </ul>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Reduced operational costs</li>
+            <li>Improved accuracy and speed</li>
+            <li>Enhanced employee productivity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-accordion" [class.expanded]="expandedService === 'erp'">
+      <div class="accordion-header" (click)="toggleService('erp')">
+        <h3 class="accordion-title">ERP & CRM Strategy</h3>
+        <i class="material-icons accordion-icon">{{ expandedService === 'erp' ? 'remove' : 'add' }}</i>
+      </div>
+      <div class="accordion-content">
+        <div class="service-overview">
+          <h4>Overview</h4>
+          <p>We help MSMEs select, implement, and customize ERP and CRM systems that align with their business goals and scale with growth.</p>
+        </div>
+        <div class="service-details">
+          <h4>Key Services</h4>
+          <ul>
+            <li>Needs assessment and vendor evaluation</li>
+            <li>ERP/CRM selection and implementation</li>
+            <li>Data migration and system integration</li>
+            <li>Custom module development and training</li>
+          </ul>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Centralized data and operations</li>
+            <li>Better customer relationship management</li>
+            <li>Real-time business insights</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-accordion" [class.expanded]="expandedService === 'cms'">
+      <div class="accordion-header" (click)="toggleService('cms')">
+        <h3 class="accordion-title">Cloud Migration & SaaS Adoption</h3>
+        <i class="material-icons accordion-icon">{{ expandedService === 'cms' ? 'remove' : 'add' }}</i>
+      </div>
+      <div class="accordion-content">
+        <div class="service-overview">
+          <h4>Overview</h4>
+          <p>We guide businesses in transitioning from legacy systems to cloud-based platforms, ensuring minimal disruption and maximum ROI.</p>
+        </div>
+        <div class="service-details">
+          <h4>Key Services</h4>
+          <ul>
+            <li>Cloud readiness assessment</li>
+            <li>Migration planning and execution</li>
+            <li>SaaS product selection and onboarding</li>
+            <li>Security and compliance setup</li>
+          </ul>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Scalability and flexibility</li>
+            <li>Lower infrastructure costs</li>
+            <li>Remote access and collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-accordion" [class.expanded]="expandedService === 'cds'">
+      <div class="accordion-header" (click)="toggleService('cds')">
+        <h3 class="accordion-title">Compliance & Data Security</h3>
+        <i class="material-icons accordion-icon">{{ expandedService === 'cds' ? 'remove' : 'add' }}</i>
+      </div>
+      <div class="accordion-content">
+        <div class="service-overview">
+          <h4>Overview</h4>
+          <p>We ensure your business meets regulatory requirements and protects sensitive data through robust security frameworks and policies.</p>
+        </div>
+        <div class="service-details">
+          <h4>Key Services</h4>
+          <ul>
+            <li>TDS, GST, and labor law compliance consulting</li>
+            <li>Data protection and privacy audits</li>
+            <li>Cybersecurity strategy and implementation</li>
+            <li>Employee training on compliance protocols</li>
+          </ul>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Reduced legal risks</li>
+            <li>Enhanced trust with clients and partners</li>
+            <li>Strong data governance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-accordion" [class.expanded]="expandedService === 'cwd'">
+      <div class="accordion-header" (click)="toggleService('cwd')">
+        <h3 class="accordion-title">Custom Workflow Design</h3>
+        <i class="material-icons accordion-icon">{{ expandedService === 'cwd' ? 'remove' : 'add' }}</i>
+      </div>
+      <div class="accordion-content">
+        <div class="service-overview">
+          <h4>Overview</h4>
+          <p>We design tailored workflows that reflect your unique business processes, improving efficiency and accountability across departments.</p>
+        </div>
+        <div class="service-details">
+          <h4>Key Services</h4>
+          <ul>
+            <li>Business process reengineering</li>
+            <li>Custom workflow automation using low-code/no-code platforms</li>
+            <li>KPI tracking and reporting setup</li>
+            <li>Integration with existing tools and systems</li>
+          </ul>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Streamlined operations</li>
+            <li>Clear roles and responsibilities</li>
+            <li>Measurable performance improvements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-accordion" [class.expanded]="expandedService === 'iot'">
+      <div class="accordion-header" (click)="toggleService('iot')">
+        <h3 class="accordion-title">IoT Deployment Planning</h3>
+        <i class="material-icons accordion-icon">{{ expandedService === 'iot' ? 'remove' : 'add' }}</i>
+      </div>
+      <div class="accordion-content">
+        <div class="service-overview">
+          <h4>Overview</h4>
+          <p>We help MSMEs leverage IoT technologies to monitor assets, optimize operations, and gain real-time insights into their business environment.</p>
+        </div>
+        <div class="service-details">
+          <h4>Key Services</h4>
+          <ul>
+            <li>IoT use-case identification and feasibility analysis</li>
+            <li>Sensor and device selection</li>
+            <li>Network and data architecture planning</li>
+            <li>Integration with business systems and dashboards</li>
+          </ul>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Real-time monitoring and alerts</li>
+            <li>Predictive maintenance</li>
+            <li>Data-driven decision-making</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    </div>
+</section>
+
+<!-- <section class="services-cta-section">
+  <div class="container">
+    <h2>Ready to transform your business operations?</h2>
+    <p>Get a free consultation to see how HiTrace can help you grow.</p>
+    <a routerLink="/contact" class="cta-button">Get a Free Consultation</a>
+  </div>
+</section> -->
+
+<section class="cta-block">
+  <div class="cta-content">
+    <h2 class="cta-headline">Ready to Transform Your Business?</h2>
+    <p class="cta-sub-headline">Get a free consultation to see how HiTrace can help you grow.</p>
+    <button routerLink="/contact" class="cta-button-contact">Get a Free Consultation</button>
+  </div>
+</section>

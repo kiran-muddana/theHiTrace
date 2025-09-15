@@ -1,0 +1,19 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <h2 mat-dialog-title>{{ data.name }}</h2>
+    <button mat-icon-button (click)="dialogRef.close()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <mat-dialog-content>
+    <p class="modal-description">{{ data.description }}</p>
+    <div class="modal-details">
+      <h3>Key Features</h3>
+      <ul>
+        <li *ngFor="let detail of data.details">
+          {{ detail }}
+        </li>
+      </ul>
+    </div>
+  </mat-dialog-content>
+</div>

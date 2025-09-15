@@ -1,0 +1,165 @@
+<!-- <mat-toolbar color="primary" class="main-nav">
+  <div class="nav-left logo">
+  <a routerLink="/">
+    <span class="logo-text">HiTrace</span>
+  </a>
+  </div>
+
+  <div class="nav-right large-screen-links">
+    <a mat-button routerLink="/products">Products & Solutions</a>
+    <a mat-button routerLink="/services">Services</a>
+    <a mat-button routerLink="/about">About Us</a>
+    <a mat-button routerLink="/contact">Contact Us</a>
+  </div>
+
+  <button mat-icon-button [matMenuTriggerFor]="mobileMenu" class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #mobileMenu="matMenu">
+    <button mat-menu-item routerLink="/products">Products & Solutions</button>
+    <button mat-menu-item routerLink="/services">Services</button>
+    <button mat-menu-item routerLink="/about">About Us</button>
+    <button mat-menu-item routerLink="/contact">Contact Us</button>
+  </mat-menu>
+</mat-toolbar> -->
+
+<!-- -------------------------- -->
+
+<!-- <mat-toolbar color="primary" class="main-nav">
+  <div class="nav-left logo">
+    <a routerLink="/">
+      <span class="logo-text">HiTrace</span>
+    </a>
+  </div>
+
+  <div class="nav-right large-screen-links">
+    <a mat-button [matMenuTriggerFor]="productsMenu">Products & Solutions</a>
+    <a mat-button [matMenuTriggerFor]="servicesMenu">Services</a>
+    <a mat-button routerLink="/about">About Us</a>
+    <a mat-button routerLink="/contact">Contact Us</a>
+  </div>
+
+  <button mat-icon-button [matMenuTriggerFor]="mobileMenu" class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #mobileMenu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="productsMenu">Products & Solutions</button>
+    <button mat-menu-item [matMenuTriggerFor]="servicesMenu">Services</button>
+    <button mat-menu-item routerLink="/about">About Us</button>
+    <button mat-menu-item routerLink="/contact">Contact Us</button>
+  </mat-menu>
+</mat-toolbar>
+
+<mat-menu #productsMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="hrMenu">HR & Operations</button>
+  <button mat-menu-item [matMenuTriggerFor]="financeMenu">Finance & Compliance</button>
+  <button mat-menu-item [matMenuTriggerFor]="techMenu">Tech & Devices</button>
+</mat-menu>
+
+<mat-menu #hrMenu="matMenu">
+  <button mat-menu-item routerLink="/products/hr">Hi Trace HR</button>
+  <button mat-menu-item routerLink="/products/recruit">Hi Trace Recruit</button>
+  <button mat-menu-item routerLink="/products/pam">Hi Trace PAM</button>
+  <button mat-menu-item routerLink="/products/l&d">Hi Trace L&D</button>
+  <button mat-menu-item routerLink="/products/vms">Hi Trace VMS</button>
+  <button mat-menu-item routerLink="/products/cms">Hi Trace CMS</button>
+  <button mat-menu-item routerLink="/products/ticket">Hi Trace Ticket</button>
+</mat-menu>
+
+<mat-menu #financeMenu="matMenu">
+  <button mat-menu-item routerLink="/products/tds">Hi Trace TDS</button>
+  <button mat-menu-item routerLink="/products/project">Hi Trace Project</button>
+  <button mat-menu-item routerLink="/products/crm">Hi Trace CRM</button>
+</mat-menu>
+
+<mat-menu #techMenu="matMenu">
+  <button mat-menu-item routerLink="/products/iot">Hi Trace IoT</button>
+  <button mat-menu-item routerLink="/products/devices">Hi Trace Devices</button>
+  <button mat-menu-item routerLink="/products/asset">Hi Trace Asset</button>
+</mat-menu>
+
+<mat-menu #servicesMenu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>precision_manufacturing</mat-icon>
+    <span>IoT Development & Integration</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>construction</mat-icon>
+    <span>End-to-end Implementation</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>headset_mic</mat-icon>
+    <span>Technical Support</span>
+  </button>
+</mat-menu> -->
+
+<mat-toolbar color="primary" class="main-nav">
+  <div class="nav-left logo">
+    <a routerLink="/">
+      <span class="logo-text">HiTrace</span>
+    </a>
+  </div>
+
+  <div class="nav-right large-screen-links">
+    <!-- <div class="dropdown-container">
+      <a mat-button routerLink="/products">Products & Solutions</a>
+      <div class="mega-menu products-menu">
+        <div class="menu-column">
+          <h4 class="menu-heading">HR & Operations</h4>
+          <a routerLink="/products/hr">Hi Trace HR</a>
+          <a routerLink="/products/recruit">Hi Trace Recruit</a>
+          <a routerLink="/products/pam">Hi Trace PAM</a>
+          <a routerLink="/products/l&d">Hi Trace L&D</a>
+          <a routerLink="/products/vms">Hi Trace VMS</a>
+          <a routerLink="/products/cms">Hi Trace CMS</a>
+          <a routerLink="/products/ticket">Hi Trace Ticket</a>
+        </div>
+        <div class="menu-column">
+          <h4 class="menu-heading">Finance & Compliance</h4>
+          <a routerLink="/products/tds">Hi Trace TDS</a>
+          <a routerLink="/products/project">Hi Trace Project</a>
+          <a routerLink="/products/crm">Hi Trace CRM</a>
+        </div>
+        <div class="menu-column">
+          <h4 class="menu-heading">Tech & Devices</h4>
+          <a routerLink="/products/iot">Hi Trace IoT</a>
+          <a routerLink="/products/devices">Hi Trace Devices</a>
+          <a routerLink="/products/asset">Hi Trace Asset</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="dropdown-container">
+      <a mat-button routerLink="/services">Services</a>
+      <div class="mega-menu services-menu">
+        <div class="menu-column">
+          <h4 class="menu-heading">Consulting & Integration</h4>
+          <a href="#">Deep Domain Expertise</a>
+          <a href="#">IoT Integration & Solutions</a>
+          <a href="#">Project Management</a>
+        </div>
+        <div class="menu-column">
+          <h4 class="menu-heading">Implementation & Support</h4>
+          <a href="#">End-to-End Implementation</a>
+          <a href="#">Training & Development</a>
+          <a href="#">Dedicated Support</a>
+        </div>
+      </div>
+    </div> -->
+    
+    <a mat-button routerLink="/products">Products & Solutions</a>
+    <a mat-button routerLink="/services">Services</a>
+    <a mat-button routerLink="/about">About Us</a>
+    <a mat-button routerLink="/contact">Contact Us</a>
+  </div>
+
+  <button mat-icon-button [matMenuTriggerFor]="mobileMenu" class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #mobileMenu="matMenu">
+    <button mat-menu-item routerLink="/products">Products & Solutions</button>
+    <button mat-menu-item routerLink="/services">Services</button>
+    <button mat-menu-item routerLink="/about">About Us</button>
+    <button mat-menu-item routerLink="/contact">Contact Us</button>
+  </mat-menu>
+</mat-toolbar>

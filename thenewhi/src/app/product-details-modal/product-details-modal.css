@@ -1,0 +1,42 @@
+.modal-container {
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-header mat-dialog-title {
+  font-size: 2rem;
+  color: #142c66;
+  font-weight: bold;
+}
+
+.modal-description {
+  font-size: 1.1rem;
+  color: #5e5e87;
+  margin-bottom: 20px;
+}
+
+.modal-details h3 {
+  font-size: 1.5rem;
+  color: #ba0c31;
+  margin-bottom: 10px;
+}
+
+.modal-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.modal-details li {
+  font-size: 1rem;
+  color: #5e5e87;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
