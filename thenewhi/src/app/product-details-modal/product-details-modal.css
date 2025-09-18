@@ -5,16 +5,21 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-.modal-header mat-dialog-title {
+.modal-header h2.mat-dialog-title {
   font-size: 2rem;
   color: #142c66;
   font-weight: bold;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  margin-right: 15px;
 }
 
 .modal-description {
