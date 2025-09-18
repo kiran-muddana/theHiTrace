@@ -161,7 +161,6 @@ export class Products {
       name: 'TIME ATTENDANCE - FACE RECOGNITION CS-FR-TRACE (M) 1000 SERES',
       description: 'Visible light facial recognition with anti-spoofing and a 2.8" touch screen.',
       details: [
-        'Features:',
         'Visible Light Facial Recognition / Anti-spoofing algorithm against most color and B/W photos, and video attacks.',
         '2.8″ Touch Screen.',
         'Supplement lighting with adjustable brightness.',
@@ -187,7 +186,6 @@ export class Products {
       description:
         'Touchless multi-biometric identification terminal with Visible Light Facial Recognition.',
       details: [
-        'Features:',
         'Touchless multi-biometric identification terminal.',
         'Visible Light Facial Recognition technology.',
         'Recognizes a target from 30cm to 50cm.',
@@ -215,7 +213,6 @@ export class Products {
       description:
         'Ultra-thin fingerprint time attendance and access control terminal with BioID sensor and Wifi.',
       details: [
-        'Features:',
         '2.4-inch TFT color screen and Touch keys.',
         'Ultra thin and elegant design.',
         'Full Access Control Features: Anti-passback, access control interface for 3rd party electric lock, door sensor, exit button, alarm.',
@@ -244,7 +241,6 @@ export class Products {
       name: 'TIME ATTENDANCE - FINGERPRINT CS-FPT-101',
       description: 'A fingerprint time attendance device with a 2.8" TFT screen.',
       details: [
-        'Specifications:',
         'Screen: 2.8’ TFT',
         'Fingerprint capacity: 1000',
         'Card capacity: 500',
@@ -266,7 +262,6 @@ export class Products {
       name: 'TIME ATTENDANCE - CS-FRT302',
       description: 'A time attendance device with a large capacity for faces and fingerprints.',
       details: [
-        'Features:',
         '3,000 face and 4,000 fingerprint templates.',
         'Multi-languages.',
         'High verification speed.',
@@ -295,7 +290,6 @@ export class Products {
       description:
         'Visible light facial recognition with anti-spoofing and multiple verification methods.',
       details: [
-        'Features:',
         'Visible Light Facial Recognition.',
         'Anti-spoofing algorithm against print attack, videos attack and 3D mask attack.',
         'Multiple verification methods: Face / Fingerprint / Card / Password.',
