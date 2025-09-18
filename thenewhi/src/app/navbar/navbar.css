@@ -9,6 +9,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.logo-image {
+  height: 40px;
+  vertical-align: middle;
+}
+
 .large-screen-links a {
   color: #5e5e87;
   position: relative;
@@ -17,10 +22,9 @@
   font-size: medium;
   padding: 10px 15px;
   transition: color 0.3s ease;
-  overflow: hidden; /* To contain the pseudo-element */
+  overflow: hidden;
 }
 
-/* Pseudo-element for the hover background */
 .large-screen-links a::after {
   content: '';
   position: absolute;
@@ -34,9 +38,8 @@
   z-index: -1;
 }
 
-/* Hover state */
 .large-screen-links a:hover {
-  color: white; /* Change text color to white on hover */
+  color: white;
 }
 
 .large-screen-links a:hover::after {
@@ -62,7 +65,7 @@
   }
 }
 
-.nav-left.logo a {
+/* .nav-left.logo a {
   font-size: 40px;
   font-weight: bold;
   text-decoration: none;
@@ -71,7 +74,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-}
+} */
 
 /* Container for the dropdown to enable hover */
 .dropdown-container {
@@ -80,10 +83,10 @@
 }
 
 /* Hide the mega-menu by default */
-.mega-menu {
+/* .mega-menu {
   display: none;
   position: absolute;
-  top: 100%; /* Position below the navbar */
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
@@ -92,20 +95,20 @@
   min-width: 600px;
   z-index: 1000;
   border-radius: 8px;
-}
+} */
 
 /* Show the mega-menu on hover */
-.dropdown-container:hover .mega-menu {
+/* .dropdown-container:hover .mega-menu {
   display: flex;
   gap: 40px;
   animation: fadeIn 0.3s ease-in-out forwards;
-}
+} */
 
 /* Keyframes for a smooth fade-in animation */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
   to { opacity: 1; transform: translateX(-50%) translateY(0); }
-}
+} */
 
 .menu-column {
   flex: 1;

@@ -18,7 +18,7 @@
 }
 
 /* Services Focus Section */
-.services-focus-section {
+/* .services-focus-section {
   padding: 80px 20px;
   text-align: center;
 }
@@ -71,8 +71,11 @@
 .focus-card p {
   font-size: 1rem;
   color: #5e5e87;
+} */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 /* Service Details & Accordion */
 .services-details-section {
   padding: 80px 20px;
