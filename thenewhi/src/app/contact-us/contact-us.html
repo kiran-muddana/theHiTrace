@@ -10,33 +10,44 @@
 
 <section class="contact-main-content">
   <div class="contact-grid">
+    <!-- Contact Form -->
     <div class="contact-form-container">
       <h2 class="form-heading">Send us a message</h2>
-      <form class="contact-form">
+
+      <form class="contact-form" (ngSubmit)="onSubmit()" #f="ngForm">
         <mat-form-field appearance="outline" class="full-width-input">
           <mat-label>Your Name</mat-label>
-          <input matInput />
+          <input matInput name="name" [(ngModel)]="formData.name" required />
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="full-width-input">
           <mat-label>Your Email</mat-label>
-          <input matInput placeholder="you@example.com" type="email" />
+          <input matInput name="email" [(ngModel)]="formData.email" type="email" required />
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="full-width-input">
           <mat-label>Phone Number</mat-label>
-          <input matInput placeholder="+91 12345 67890" />
+          <input matInput name="phone" [(ngModel)]="formData.phone" />
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="full-width-input">
           <mat-label>Your Message</mat-label>
-          <textarea matInput rows="6" placeholder="How can we help you?"></textarea>
+          <textarea
+            matInput
+            name="message"
+            [(ngModel)]="formData.message"
+            rows="6"
+            required
+          ></textarea>
         </mat-form-field>
 
-        <button mat-flat-button color="primary" class="submit-button">Send Message</button>
+        <button mat-flat-button color="primary" class="submit-button" type="submit">
+          Send Message
+        </button>
       </form>
     </div>
 
+    <!-- Contact Info -->
     <div class="contact-info-container">
       <h2 class="info-heading">Contact Information</h2>
 
